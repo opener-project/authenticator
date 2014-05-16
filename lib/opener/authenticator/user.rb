@@ -3,7 +3,6 @@ require 'active_record'
 module Opener
   class Authenticator
     class User < ActiveRecord::Base
-       attr_accessible :username, :password
        
        validates_uniqueness_of :username
        validates_presence_of :password
