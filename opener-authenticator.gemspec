@@ -17,14 +17,8 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'builder', '~>3.0.0'
   gem.add_dependency 'sinatra', '~>1.4.2'
   gem.add_dependency 'httpclient'
-  
-  if RUBY_PLATFORM === "java"
-    gem.add_dependency 'jdbc-mysql'
-    gem.add_dependency 'activerecord-jdbcmysql-adapter'
-  else
-    gem.add_dependency 'mysql2'
-  end
-  
+  gem.add_dependency 'jdbc-mysql'
+  gem.add_dependency 'activerecord-jdbcmysql-adapter'  
   gem.add_dependency 'activerecord', '~>3.2'
   gem.add_dependency 'activesupport', '~>3.2'
   gem.add_dependency 'puma'
