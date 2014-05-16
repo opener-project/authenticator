@@ -1,0 +1,10 @@
+.DS_Store
+.idea/
+pkg/
+Gemfile.lock
+*.swp
+*~
+.rvmrc
+tmp/*
+db/*
+.bundle/*
