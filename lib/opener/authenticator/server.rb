@@ -9,7 +9,7 @@ module Opener
         authenticate!
       end
       
-      def protected
+      protected
       
       def authenticate!
         return if authenticated?
