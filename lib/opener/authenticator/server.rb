@@ -17,7 +17,7 @@ module Opener
       end
       
       def authenticated?
-        User.exists?(:username => params[:username], :password => Digest::SHA1.hexdigest([params[:password]))
+        User.exists?(:username => params[:username], :password => Digest::SHA1.hexdigest(params[:password]))
       end
     end # Server
   end # Authenticator
