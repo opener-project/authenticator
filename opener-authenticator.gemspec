@@ -3,7 +3,7 @@ require File.expand_path('../lib/opener/authenticator/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.name                  = 'opener-authenticator'
   gem.version               = Opener::Authenticator::VERSION
-  gem.authors               = ['giannismelidis@olery.com']
+  gem.authors               = ['development@olery.com']
   gem.summary               = 'Simple authentication endpoint for the Opener Web Services.'
   gem.description           = gem.summary
   gem.homepage              = "http://opener-project.github.com/"
