@@ -17,8 +17,8 @@ module Opener
       end
       
       def authenticated?
-        return false unless params[:username] && params[:password]
-        User.exists?(:username => params[:username], :password => Digest::SHA1.hexdigest(params[:password]))
+        return false unless params[:secret] && params[:token]
+        User.exists?(:secret => params[:secret], :token => Digest::SHA1.hexdigest(params[:token]))
       end
     end # Server
   end # Authenticator

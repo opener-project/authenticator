@@ -4,13 +4,13 @@ module Opener
   class Authenticator
     class User < ActiveRecord::Base
        
-       validates_uniqueness_of :username
-       validates_presence_of :password
+       validates_uniqueness_of :secret
+       validates_presence_of :token
        
-       before_save :encrypt_password
+       before_save :encrypt_token
        
-       def encrypt_password
-         self.password = Digest::SHA1.hexdigest(password)
+       def encrypt_token
+         self.token = Digest::SHA1.hexdigest(token)
        end
     end
   end
