@@ -9,13 +9,15 @@ Gem::Specification.new do |gem|
   gem.homepage              = "http://opener-project.github.com/"
   gem.has_rdoc              = 'yard'
   gem.required_ruby_version = '>= 1.9.2'
+  gem.license               = 'Apache 2.0'
 
   gem.files = Dir.glob([
     'config/**/*',
     'lib/**/*',
     'config.ru',
     '*.gemspec',
-    'README.md'
+    'README.md',
+    'LICENSE.txt'
   ]).select { |file| File.file?(file) }
 
   gem.executables = Dir.glob('bin/*').map { |file| File.basename(file) }
